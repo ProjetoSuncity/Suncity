@@ -189,10 +189,18 @@ Em 2020, com mais de 30 mil votos, Zé Cocá foi eleito prefeito de Jequié.</p>
       secoes.forEach(secao => secao.classList.remove('ativa'));
       document.getElementById(id).classList.add('ativa');
     }
-	 window.addEventListener("load", function () {
-		const loader = document.getElementById("loader");
-		loader.style.display = "none";
-	 });
+	window.addEventListener("load", function () {
+    // Espera um pequeno atraso para garantir que as imagens renderizem
+    setTimeout(() => {
+      const loader = document.getElementById("loader");
+      loader.style.opacity = "0";
+      loader.style.transition = "opacity 0.5s ease";
+
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 500);
+    }, 300); // atraso de segurança (pode ajustar)
+  });
   </script>
   
 
