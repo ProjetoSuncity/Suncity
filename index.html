@@ -12,6 +12,10 @@
 </head>
 
 <body>
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
 
   <header>
    <h1><span class="titulo-preto">Jequié</span> - <span class="titulo-preto">Suncity</span></h1>
@@ -185,7 +189,13 @@ Em 2020, com mais de 30 mil votos, Zé Cocá foi eleito prefeito de Jequié.</p>
       secoes.forEach(secao => secao.classList.remove('ativa'));
       document.getElementById(id).classList.add('ativa');
     }
+	 window.addEventListener("load", function () {
+		const loader = document.getElementById("loader");
+		loader.style.display = "none";
+	 });
   </script>
+  
+
 
 </body>
 </html>
