@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --fundo: #FFA500;           /* amarelo ouro */
+  --texto: #000;
+  --primaria: #c1440e;       
+  --destaque: #ffb100;     
+  --fundo-card: #FFA500;
+  --borda: #FFA500;
+  --texto-nav: #000;
+}
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Pricedown', pricedown black;
+  background-color: var(--fundo);
+  color: var(--texto-nav);
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+/* Cabeçalho com cores terrosas */
+header {
+ font-family: 'Tw Cen MT-Rockwell'; 
+  background: linear-gradient(135deg, var(--primaria), var(--destaque));
+  color: #91171F;
+  text-align: center;
+  padding: 10px 10px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Navegação com botões circulares */
+nav {
+  background-color: #FFA500;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 12px;
+  border-bottom: 2px solid var(--borda);
+}
+
+nav a {
+  color: var(--texto-nav);
+  background-color: transparent;
+  border: 2px solid var(--texto-nav);
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--primaria);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(193, 68, 14, 0.4);
+}
+
+.container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Cartões com fundo claro e borda quente */
+.secao {
+  display: none;
+  background-color: var(--fundo-card);
+  padding: 5px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--borda);
+  box-shadow: 0 4px 12px rgba(193, 68, 14, 0.15);
+  transition: all 0.4s ease;
+}
+
+.secao.ativa {
+  display: block; 
+  text-align: center;
+}
+
+.secao img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 2px solid var(--primaria);
+}
+
+footer {
+  background-color: #FFA500;
+  color: #6d4c41;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--borda);
+  margin-top: 50px;
+}
+
+h1, h2, h3 {
+  color: var(--texto-nav);
+}
+
+p, li {
+  margin-bottom: 10px;
+  color: var(--texto);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #fff6ea;
+  border: 1px solid var(--borda);
+  color: var(--texto);
+  font-size: 16px;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.botao {
+  background-color: var(--primaria);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.botao:hover {
+  background-color: var(--destaque);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 177, 0, 0.5);
+}
+.titulo-preto {
+  color: #000000 !important;
+  font-size: 51px; /* aumente esse valor como preferir */
+  font-weight: bold; /* opcional */
+}
+
+
+  
+
